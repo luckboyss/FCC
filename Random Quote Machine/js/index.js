@@ -197,7 +197,8 @@ function getQuote() {
         currentAv = currentQuotes.av;
 
     $("#bilibili-quote").attr("href", "https://www.bilibili.com/video/" + encodeURIComponent(currentAv) + "/")
-    $("#tweet-quote").attr("href", "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + encodeURIComponent('"' + currentQuote + '" -' + currentAuthor));
+    //$("#tweet-quote").attr("href", "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + encodeURIComponent('"' + currentQuote + '" -' + currentAuthor));
+    $("#tweet-quote").attr("href", "https://service.weibo.com/share/share.php?content=1&appkey=RandomQuoteMachine&title=" + encodeURIComponent('"' + currentQuote + '" -' + currentAuthor + "https://www.bilibili.com/video/" + encodeURIComponent(currentAv) + "/"));
     $(".quote-text").animate({
             opacity: 0
         },

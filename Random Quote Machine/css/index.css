@@ -3,63 +3,61 @@
     margin: 0px;
     list-style: none;
     vertical-align: baseline;
-}
-
-body {
+  }
+  
+  body {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Helvetica, sans-serif;
-    background-color: #FB6964;
-    color: #FB6964;
-}
-
-#wrapper {
+    background-color: #fb6964;
+    color: #fb6964;
+  }
+  
+  #wrapper {
     font-family: Microsoft Yahei;
-}
-
-#quote-box {
+  }
+  
+  #quote-box {
     background-color: white;
     width: 500px;
     border-radius: 5px;
     padding: 40px 50px;
-
-}
-
-.quote-text {
+  }
+  
+  .quote-text {
     text-align: center;
     width: 500px;
     height: auto;
     font-weight: 500;
     font-size: 1.8em;
-}
-
-.quote-text i {
-    font-size: 1.0em;
+  }
+  
+  .quote-text i {
+    font-size: 1em;
     margin-right: 0.5em;
-}
-
-.quote-author {
+  }
+  
+  .quote-author {
     padding-top: 20px;
     width: 500px;
     height: auto;
     font-size: 1em;
     text-align: right;
-}
-
-.buttons {
+  }
+  
+  .buttons {
     width: 500px;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-}
-
-.button {
+  }
+  
+  .button {
     height: 38px;
-    background-color: #FB6964;
+    background-color: #fb6964;
     color: white;
     padding: 8px 16px 6px 16px;
     border: none;
@@ -67,92 +65,101 @@ body {
     outline: none;
     opacity: 1;
     font-size: 0.85em;
-}
-
-.button:hover {
+  }
+  
+  .button:hover {
     opacity: 0.8;
-}
-
-.button-left {
+  }
+  
+  .button-left {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-}
-
-#tweet-quote,
-#bilibili-quote {
+  }
+  
+  #tweet-quote,
+  #bilibili-quote {
+    position: relative;
     padding: 0px;
-    padding-top: 8px;
     text-align: center;
     font-size: 1.2em;
-    height: 30px;
+    height: 40px;
     width: 40px;
     margin-left: 5px;
-}
-
-#new-quote {
+  }
+  
+  .button-left i {
+    position: absolute;
+    vertical-align: middle;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);      
+  }
+  
+  #new-quote {
     margin-top: 30px;
-}
-
-.footer {
+  }
+  
+  .footer {
     width: 500px;
     text-align: center;
     display: block;
     margin: 15px auto 30px auto;
     font-size: 0.8em;
     color: #fff;
-}
-
-.footer a {
+  }
+  
+  .footer a {
     font-weight: 500;
     text-decoration: none;
     color: #fff;
-}
-
-@media (max-width: 815px) {
-
+  }
+  
+  @media (max-width: 815px) {
     /* For mobile phones: */
     #quote-box {
-        width: 60vw;
-        padding: 5.6vw 7vw;
+      width: 60vw;
+      padding: 5.6vw 7vw;
     }
-
+  
     .quote-text {
-        width: 60vw;
-        font-size: 1.2em;
+      width: 60vw;
+      font-size: 1.2em;
     }
-
+  
     .quote-author {
-        width: 60vw;
-        font-size: 0.8em;
+      width: 60vw;
+      font-size: 0.8em;
     }
-
+  
     .buttons {
-        width: 60vw;
+      width: 60vw;
     }
-
+  
     .footer {
-        width: 60vw;
+      width: 60vw;
     }
-
+  
     .button {
-        height: 25px;
-        padding: 4px 8px 3px 8px;
-        font-size: 0.5em;
+      height: 25px;
+      padding: 4px 8px 3px 8px;
+      font-size: 0.5em;
     }
-
+  
     #tweet-quote,
     #bilibili-quote {
-        padding: 2px 0 3px 0;
-        font-size: 0.5em;
-        height: 15px;
-        width: 20px;
-        margin-left: 3px;
+      padding: 2px 0 3px 0;
+      font-size: 0.5em;
+      height: 15px;
+      width: 20px;
+      margin-left: 3px;
     }
-
-    #new-quote,.button-left {
-        margin-top: 15px;
+  
+    #new-quote,
+    .button-left {
+      margin-top: 15px;
     }
-}
+  }
+  
