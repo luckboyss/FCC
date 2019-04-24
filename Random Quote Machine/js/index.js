@@ -12,7 +12,7 @@ const quotesData = {
         {
             quote: "你灌醉了我，我掀起波澜~~",
             author: "波澜哥",
-            av: "av7432563"
+            av: "av4376808"
         },
         {
             quote: "我已经赢了，我已经赢她太多了。",
