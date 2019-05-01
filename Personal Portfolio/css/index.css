@@ -99,7 +99,7 @@ a {
     color: darkgreen
 }
 
-#profile-link {
+.profile-links {
     height: 60%;
     width: 100%;
 }
