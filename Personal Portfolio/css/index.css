@@ -1,0 +1,143 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    color: #333;
+    font-family: Helvetica, sans-serif;    
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+#welcome-section {
+    background-color:aliceblue;  
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#welcome-section h1 {
+    font-size: 1.8em;
+}
+
+#welcome-section span {
+    color: darkgreen;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;   
+}
+
+.nav {
+    float: right;
+    margin: 15px 30px;
+}
+
+#projects {
+    width: 100%;
+    position: relative;
+    
+}
+
+.project-tile {
+    
+    float: left;
+    width: 20vw;
+    height: 16vw;
+    min-width: 280px;
+    min-height: 210px;
+    margin: 50px 0 50px 19.9vw;
+    text-align: center;
+    border: 1px solid aqua;
+}
+
+.project-tile img {
+    width: 100%;
+    height: 80%;
+}
+
+.project-tile p {
+    font-size: 1em;
+    line-height: 3.2vw;
+}
+
+#profile-links {
+    position: relative;
+    text-align: center;
+    clear: both;
+    background-color: rgba(195, 240, 232);
+    height: 600px;
+}
+
+.header {
+    height: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#profile-links h1 {
+    font-size: 1.8em;
+}
+
+#profile-links span {
+    margin-top: 10px;
+    color: darkgreen
+}
+
+#profile-link {
+    height: 60%;
+    width: 100%;
+}
+
+.contect-detail {
+    margin-top: 100px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+    border: 1px solid darkorchid;
+    margin-left: 40px;
+    background-color: snow;
+    font-weight: bold;  
+}
+
+.contect-detail:hover {
+    background-color: coral;
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 960px) {
+    .project-tile {
+        margin-left: 40vw;
+        
+    }   
+}
